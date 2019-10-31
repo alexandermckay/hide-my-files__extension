@@ -1,7 +1,7 @@
 const { createFilePath } = require('../utils/createFilePath')
 const { fsPath } = require('../utils/getWorkspaceFolder')
 
-const HIDE_MY_FILES_RC = '.hidefilesrc'
+const HIDE_MY_FILES_RC = '.hidemyfilesrc'
 const VS_CODE = '.vscode'
 const SETTINGS = 'settings.json'
 

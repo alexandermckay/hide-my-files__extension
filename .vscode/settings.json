@@ -1,5 +1,3 @@
 {
-  "files.exclude": {
-    "package.json": true
-  }
+  "files.exclude": {}
 }

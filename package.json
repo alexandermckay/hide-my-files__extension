@@ -1,14 +1,20 @@
 {
-  "name": "hide-files",
-  "publisher": "alex-mckay",
-  "displayName": "hide-files",
-  "description": "Toggle hidden files",
+  "name": "hide-my-files",
+  "publisher": "Alex McKay",
+  "displayName": "Hide My Files",
+  "description": "Hide files from the explorer view",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.37.0"
   },
   "categories": [
     "Other"
+  ],
+  "keywords": [
+    "hide",
+    "files",
+    "includes",
+    "files.exclude"
   ],
   "activationEvents": [
     "onCommand:extension.hideFiles"
@@ -35,5 +41,8 @@
     "mocha": "^6.1.4",
     "typescript": "^3.3.1",
     "vscode-test": "^1.0.2"
+  },
+  "dependencies": {
+    "rambda": "4.0.1"
   }
 }

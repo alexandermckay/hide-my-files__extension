@@ -1061,6 +1061,11 @@ punycode@^2.1.0:
   resolved "https://registry.yarnpkg.com/punycode/-/punycode-2.1.1.tgz#b58b010ac40c22c5657616c8d2c2c02c7bf479ec"
   integrity sha512-XRsRjdf+j5ml+y/6GKHPZbrF/8p2Yga0JPtdqTIY2Xe5ohJPD9saDJJLPvp9+NSBprVvevdXZybnj2cv8OEd0A==
 
+rambda@4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/rambda/-/rambda-4.0.1.tgz#931ef6e9ffe0f69353f9d10793581354ec2bdd16"
+  integrity sha512-F4jGPol4f8pHrNDwRvWonhOkvr2pNZVxKgWallN97Su3QX/wmdOAXHMkZ4ikaF97vVuwODcQQJ77KRjqPDDqUA==
+
 regexpp@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/regexpp/-/regexpp-2.0.1.tgz#8d19d31cf632482b589049f8281f93dbcba4d07f"
