@@ -2,7 +2,7 @@
 
 ## Config
 
-Create a `.hidefilesrc` file:
+- Create a `.hidemyfilesrc` file:
 
 ```json
 {
@@ -10,3 +10,5 @@ Create a `.hidefilesrc` file:
   "dist": true
 }
 ```
+
+- Run `Hide Files` from the _Command Palette_ to have the files disapear from the _Explorer_.
