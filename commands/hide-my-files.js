@@ -54,15 +54,16 @@ const hideMyFilesRcFileAvailable = () => {
       settingsToJS['files.exclude']
     )
 
+    const hideFiles = () =>
+      modifyHideMyFilesRc(configToJS, settingsToJS, FILES_HIDDEN)
+
+    const showFiles = () =>
+      modifyHideMyFilesRc({}, settingsToJS, FILES_INCLUDED)
+
     R.ifElse(
       (fileExcludeEmpty) => fileExcludeEmpty,
-      () =>
-        modifyHideMyFilesRc(
-          configToJS,
-          settingsToJS,
-          FILES_HIDDEN
-        ),
-      () => modifyHideMyFilesRc({}, settingsToJS, FILES_INCLUDED)
+      hideFiles,
+      showFiles
     )(settingsIsEmpty)
   }
 
