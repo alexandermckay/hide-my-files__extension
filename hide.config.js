@@ -1,4 +1,4 @@
 module.exports = {
-  ignore: ['.git'],
+  ignore: ['node_modules', '.git'],
   keep: ['extension.js']
 }

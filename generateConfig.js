@@ -1,9 +1,14 @@
 const fs = require('fs')
 const R = require('rambda')
-const config = require('./hide.config')
 const { writeFile } = require('./utils/writeFile')
 const vscode = require('vscode')
 const path = require('path')
+const config = require(path.join(
+  vscode.workspace.workspaceFolders[0].uri.fsPath,
+  'hide.config.js'
+))
+
+console.log(config.keep)
 
 const ignore =
   config.ignore.length > 0
