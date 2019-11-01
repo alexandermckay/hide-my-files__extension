@@ -3,7 +3,7 @@
   "publisher": "ahvmckay",
   "displayName": "Hide My Files",
   "description": "Hide files from the explorer view",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "engines": {
     "vscode": "^1.37.0"
   },
