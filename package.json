@@ -3,6 +3,7 @@
   "publisher": "ahvmckay",
   "displayName": "Hide My Files",
   "description": "Hide files from the explorer view",
+  "repository": "https://github.com/alexandermckay/hide-my-files__extension.git",
   "version": "0.2.0",
   "engines": {
     "vscode": "^1.37.0"
