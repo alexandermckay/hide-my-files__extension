@@ -2,7 +2,7 @@
   "name": "hide-my-files",
   "publisher": "ahvmckay",
   "displayName": "Hide My Files",
-  "description": "Hide files from the explorer view",
+  "description": "Hide files from the Explorer view",
   "repository": "https://github.com/alexandermckay/hide-my-files__extension.git",
   "version": "0.3.0",
   "engines": {
@@ -18,7 +18,8 @@
     "files.exclude"
   ],
   "activationEvents": [
-    "onCommand:extension.hideFiles"
+    "onCommand:extension.hideFiles",
+    "onCommand:extension.hideConfig"
   ],
   "main": "./extension.js",
   "contributes": {
@@ -26,6 +27,10 @@
       {
         "command": "extension.hideFiles",
         "title": "Hide Files"
+      },
+      {
+        "command": "extension.hideConfig",
+        "title": "Hide Files Config"
       }
     ]
   },

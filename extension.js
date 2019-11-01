@@ -1,6 +1,4 @@
 const { commands, window } = require('vscode')
-// const { hideFiles } = require('./commands/hide-my-files')
-
 const filePaths = require('./collections/filePaths')
 const fileExists = require('./collections/fileExists')
 const { createDirectory } = require('./utils/createDirectory')
@@ -9,6 +7,7 @@ const { isObjectEmpty } = require('./utils/isObjectEmpty')
 const R = require('rambda')
 const { readParseJSON } = require('./utils/readParseJSON')
 const { createProp } = require('./utils/createProp')
+const { hideConfig } = require('./generateConfig')
 
 const SETTINGS_CREATED = 'A settings.json file has been created!'
 const FILES_INCLUDED = 'All files are visible!'
@@ -92,7 +91,15 @@ function activate(context) {
   )
 
   context.subscriptions.push(disposable)
+
+  let test = commands.registerCommand(
+    'extension.hideConfig',
+    hideConfig
+  )
+
+  context.subscriptions.push(test)
 }
+
 exports.activate = activate
 
 function deactivate() {}
